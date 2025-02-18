@@ -18,9 +18,9 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "23133982"))
-API_HASH = environ.get("API_HASH", "b18b6c5f48b57d004d402a2a3315bc05")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8053607895:AAFlJ1qwcUpZGqhpF90dSKSrw0ViBKg_eCk")
+API_ID = int(environ.get("API_ID", ""))
+API_HASH = environ.get("API_HASH", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8119487919').split()]
@@ -35,7 +35,7 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "mongodb+srv://royalveeru5:admin@123@fuck.xzld5.mongodb.net/?retryWrites=true&w=majority&appName=fuck")
+DB_URI = environ.get("DB_URI", "")
 DB_NAME = environ.get("DB_NAME", "techvjbotz")
 
 # Auto Delete Information
